@@ -35,6 +35,9 @@ namespace Server
                 {
                     serverMessage = sr.ReadToEnd();
                     Console.WriteLine("клиент: " + serverMessage);
+                    clientMessage = Console.ReadLine();
+                    sw.WriteLine(clientMessage);
+                    sw.Flush();
                 }
             }
         }
