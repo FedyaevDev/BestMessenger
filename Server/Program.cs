@@ -15,7 +15,7 @@ namespace Server
         static void Main(string[] args)
         {
             string serverMessage = "";
-            string clientMessage = "";
+            string clientMessageAbsolute = "";
             try
             {
                 TcpListener tcpServer = new TcpListener(IPAddress.Parse("127.0.0.1"), 5000);
